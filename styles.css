@@ -1,0 +1,186 @@
+html, body {
+	height: 100%;
+	margin: 0px;
+}
+
+body {
+  font-family: 'Fira Sans', sans-serif;
+}
+
+h1 {
+  font-weight: lighter;
+}
+
+h2 {
+  font-weight: lighter;
+}
+
+h3 {
+  color: #0D89BD;
+  font-weight: lighter;
+}
+
+p {
+  font-weight: lighter;
+}
+
+.main-content {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.nav-container {
+  flex: 1;
+  background-color: #0585CF;
+  font-weight: lighter;
+  display: flex;
+}
+
+.links {
+  margin-left: 10%;
+}
+
+.nav-container a:link,
+.nav-container a:hover,
+.nav-container a:active,
+.nav-container a:visited {
+  color: #CFFCFF;
+  text-decoration: none;
+  margin-right: 15px;
+  border-width: 0px 0px 1px 0px;
+}
+
+.nav-container a:hover {
+  border-style: solid;
+  border-width: 0px 0px 1px 0px;
+  padding-bottom: 2px;
+}
+
+.header-container {
+  flex: 3;
+  background-color: #0AA1DA;
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-container .name {
+  margin-left: 10%;
+}
+
+.header-container img {
+  height: 130px;
+  width: 130px;
+  border-radius: 50%;
+  margin-right: 10%;
+}
+
+.bio-container {
+  flex: 1.5;
+  background-color: #576268;
+  box-shadow: inset 0 10px 10px rgba(0,0,0,0.25), inset 0 -3px 10px rgba(0,0,0,0.25);
+}
+
+.bio-container p {
+    margin: 2% 10%;
+}
+
+.nav-container,
+.header-container,
+.bio-container {
+  color: #ffffff;
+}
+
+.quals-container {
+  flex: 12;
+  display: flex;
+}
+
+.left-pane-container {
+  flex: 2;
+  background-color: #F7F7F7;
+  padding-left: 1%;
+  font-weight: lighter;
+  font-size: 18;
+  display: flex;
+  flex-direction: column;
+}
+
+.left-pane-container > * {
+  margin-left: 28%;
+  margin-right: 10%;
+}
+
+.personal-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 3% 0;
+}
+
+.personal hr {
+  border-top: 2px solid #EAEAEA;
+}
+
+.personal-row div:first-child {
+  font-weight: bold;
+}
+
+.key {
+  flex-basis: 35%;
+}
+
+.value {
+  flex: 1;
+}
+
+.software-row {
+  display: flex;
+  margin: 3% 0;
+}
+
+.tech {
+  flex-basis: 35%;
+}
+
+.meter {
+  flex: 1;
+}
+
+.meter {
+	height: 10px;
+	position: relative;
+	background: #D0D1D6;
+}
+
+.meter > span {
+  display: block;
+  height: 100%;
+  background-color: #0D89BD;
+  position: relative;
+  overflow: hidden;
+}
+
+.right-pane-container {
+  flex: 4;
+  background-color: #EEEEEE;
+  box-shadow: inset 10px 0 10px rgba(0,0,0,0.25);
+}
+
+.right-pane-container > * {
+  margin-left: 5%;
+  margin-right: 35;
+}
+
+.social-container {
+  flex: 2;
+  background-color: #0AA1DA;
+}
+
+.footer-container {
+  flex: 1;
+  display: flex;
+  justify-content: space-around;
+  background-color: #0286D0;
+}

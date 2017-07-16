@@ -1,0 +1,39 @@
+html, body, .main-content {
+	height: 100%;
+	margin: 0px;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-container {
+	flex: 1;
+  background-color: #0585CF;
+}
+
+.header-container {
+	flex: 3;
+  background-color: #0AA1DA;
+}
+
+.bio-container {
+	flex: 2;
+  background-color: #576268;
+}
+
+.quals-container {
+	flex: 5;
+	background-color: green;
+}
+
+.social-container {
+	flex: 2;
+  background-color: red;
+}
+
+.footer-container {
+	flex: 1;
+  background-color: #0286D0;
+}
