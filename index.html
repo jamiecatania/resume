@@ -6,20 +6,22 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="main-content">
-    <div class="nav-container">
-      <div class="links">
-        <a href="#" class="link">Hello</a>
-        <a href="#" class="link">Resume</a>
-        <a href="#" class="link">Portfolio</a>
-      </div>
+  <div class="nav-container">
+    <div class="links">
+      <a href="#" class="link">Hello</a>
+      <a href="#" class="link current">Resume</a>
+      <a href="#" class="link">Portfolio</a>
     </div>
+  </div>
+  <div class="main-content">
     <div class="header-container">
       <div class="name">
         <h1>Jamie Catania</h1>
         <h2>Learning Experience Designer</h2>
       </div>
-      <img src="./images/Catania_headshot_sq-300x300@2x.jpg" name="Headshot" />
+      <div class="image">
+        <img src="./images/Catania_headshot_sq-300x300@2x.jpg" name="Headshot" />
+      </div>
     </div>
     <div class="bio-container">
       <p>
@@ -88,6 +90,35 @@
             </div>
           </div>
         </section>
+        <section class="hobby-container">
+          <h3>Hobbies</h3>
+          <div class="hobbies">
+            <div class="hobby">
+              <img src="./images/technology.png" />
+              <h4 class="label">Baseball</h4>
+            </div>
+            <div class="hobby">
+              <img src="./images/technology.png" />
+              <h4 class="label">Gaming</h4>
+            </div>
+            <div class="hobby">
+              <img src="./images/technology.png" />
+              <h4 class="label">Traveling</h4>
+            </div>
+            <div class="hobby">
+              <img src="./images/technology.png" />
+              <h4 class="label">Cooking</h4>
+            </div>
+            <div class="hobby">
+              <img src="./images/technology.png" />
+              <h4 class="label">Reading</h4>
+            </div>
+            <div class="hobby">
+              <img src="./images/technology.png" />
+              <h4 class="label">Technology</h4>
+            </div>
+          </div>
+        </section>
       </div>
       <div class="right-pane-container">
         <section class="work">
@@ -112,29 +143,53 @@
     <div class="social-container">
       <div class="social-info">
         <a href="http://www.facebook.com/jamiecatania13">
-        <img src="www.facebook.com/jamiecatania" />
-        <p>
-          facebook.com/jamiecatania
-        </p>
+        <img src="./images/technology.png" />
+        <h4>jamiecatania</h4>
         </a>
       </div>
-
-    </div>
-    <div class="footer-container">
-      <p>
-        1436 Henry St, Baltimore MD 21230
-      </p>
-      <p>
-        catania.jamie@gmail.com
-      </p>
-      <p>
-        219.242.2687
-      </p>
-      <p>
-        jamiecatania.net
-      </p>
+      <div class="social-info">
+        <a href="http://www.facebook.com/jamiecatania13">
+        <img src="./images/technology.png" />
+        <h4>jamiecatania13</h4>
+        </a>
+      </div>
+      <div class="social-info">
+        <a href="http://www.facebook.com/jamiecatania13">
+        <img src="./images/technology.png" />
+        <h4>@jamiecatania</h4>
+        </a>
+      </div>
     </div>
   </div>
+  <div class="footer-container">
+    <p>
+      1436 Henry St, Baltimore MD 21230
+    </p>
+    <p>
+      catania.jamie@gmail.com
+    </p>
+    <p>
+      219.242.2687
+    </p>
+    <a href="http://www.jamiecatania.net">
+      jamiecatania.net
+    </a>
+  </div>
 </body>
-<footer></footer>
+<footer>
+<script>
+const links = document.querySelectorAll(".links a");
+
+Array.from(links).forEach(link => {
+  link.addEventListener('hover', function(event) {
+    const currentPage = document.querySelector(".current");
+
+    currentPage.classList.remove('current');
+  })
+});
+
+console.log(links);
+
+</script>
+</footer>
 </html>
